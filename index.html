@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderly Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header></header>
+<body class="mulish">
+    <header>
+        <nav class="navbar display-flex">
+            <div class="brand display-flex">
+              <img src="Images/Group.png" alt="" class="brand-logo">
+              <h2 class="brand-name text-dark">TripZen <span class="text-orange">Travel</span></h2>
+            </div>
+            <ul class="nav-links display-flex">
+              <li class="menu-item"><a href="" class="nav-link"><span class="text-orange">Home</span></a></li>
+              <li class="menu-item"><a href="" class="nav-link">Packages</a></li>
+              <li class="menu-item"><a href="" class="nav-link">Testimonial</a></li>
+              <li class="menu-item"><a href="" class="nav-link">Blog</a></li>
+              <li class="menu-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+            <img src="Images/icons/menu.png" class="menu-icon" alt="menu">
+        </nav> 
+        <section class="hero display-flex">
+            <div class="hero-content">
+              <h1 class="hero-title">Explore Your Travel</h1>
+              <p class="hero-subtitle">
+                Discover breathtaking destinations, unique experiences, and unforgettable adventures with TripZen Travel. Your journey begins here.
+              </p>
+              <form action="#" class="search-form">
+                <input type="text" placeholder="Where to go"/>
+                <select>
+                    <option selected disabled>When</option>
+                    <option>Today</option>
+                    <option>Tomorrow</option>
+                  </select>
+                <select>
+                    <option selected disabled>Select Type</option>
+                    <option>Adventure</option>
+                    <option>Relax</option>
+                </select>
+                <button class="btn-primary display-flex"><img src="Images/icons/search.png" class="search-icon" alt="">Find Now</button>
+              </form>
+            </div>
+          </section>                   
+    </header>
     <main></main>
     <footer></footer>
 </body>
