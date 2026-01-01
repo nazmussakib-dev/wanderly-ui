@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wanderly Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="mulish">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="mulish">
     <header>
-        <nav class="navbar display-flex">
-            <div class="brand display-flex">
-              <img src="Images/Group.png" alt="" class="brand-logo">
-              <h2 class="brand-name text-dark">TripZen <span class="text-orange">Travel</span></h2>
-            </div>
-            <ul class="nav-links display-flex">
-              <li class="menu-item"><a href="" class="nav-link"><span class="text-orange">Home</span></a></li>
-              <li class="menu-item"><a href="" class="nav-link">Packages</a></li>
-              <li class="menu-item"><a href="" class="nav-link">Testimonial</a></li>
-              <li class="menu-item"><a href="" class="nav-link">Blog</a></li>
-              <li class="menu-item"><a href="" class="nav-link">Contact</a></li>
-            </ul>
-            <img src="Images/icons/menu.png" class="menu-icon" alt="menu">
-        </nav> 
-        <section class="hero display-flex">
-            <div class="hero-content">
-              <h1 class="hero-title">Explore Your Travel</h1>
-              <p class="hero-subtitle">
-                Discover breathtaking destinations, unique experiences, and unforgettable adventures with TripZen Travel. Your journey begins here.
-              </p>
-              <form action="#" class="search-form">
-                <input type="text" placeholder="Where to go"/>
-                <select>
-                    <option selected disabled>When</option>
-                    <option>Today</option>
-                    <option>Tomorrow</option>
-                  </select>
-                <select>
-                    <option selected disabled>Select Type</option>
-                    <option>Adventure</option>
-                    <option>Relax</option>
-                </select>
-                <button class="btn-primary display-flex"><img src="Images/icons/search.png" class="search-icon" alt="">Find Now</button>
-              </form>
-            </div>
-          </section>                   
+      <nav class="navbar display-flex">
+        <div class="brand display-flex">
+          <img src="Images/Group.png" alt="" class="brand-logo" />
+
+          <h2 class="brand-name text-dark">
+            TripZen <span class="text-orange">Travel</span>
+          </h2>
+        </div>
+
+        <ul class="nav-links display-flex">
+          <li class="menu-item">
+            <a href="" class="nav-link"
+              ><span class="text-orange">Home</span></a
+            >
+          </li>
+          <li class="menu-item"><a href="" class="nav-link">Packages</a></li>
+          <li class="menu-item"><a href="" class="nav-link">Testimonial</a></li>
+          <li class="menu-item"><a href="" class="nav-link">Blog</a></li>
+          <li class="menu-item"><a href="" class="nav-link">Contact</a></li>
+        </ul>
+
+        <img src="Images/icons/menu.png" class="menu-icon" alt="menu" />
+      </nav>
+
+      <section class="hero display-flex">
+        <div class="hero-content">
+          <h1 class="hero-title">Explore Your Travel</h1>
+
+          <p class="hero-subtitle">
+            Discover breathtaking destinations, unique experiences, and
+            unforgettable adventures with TripZen Travel. Your journey begins
+            here.
+          </p>
+
+          <form action="#" class="search-form">
+            <input type="text" placeholder="Where to go" />
+            <select>
+              <option selected disabled>When</option>
+              <option>Today</option>
+              <option>Tomorrow</option>
+            </select>
+            <select>
+              <option selected disabled>Select Type</option>
+              <option>Adventure</option>
+              <option>Relax</option>
+            </select>
+
+            <button class="btn-primary display-flex">
+              <img
+                src="Images/icons/search.png"
+                class="search-icon"
+                alt=""
+              />Find Now
+            </button>
+          </form>
+        </div>
+      </section>
     </header>
-    <main></main>
+
+    <main>
+      <section class="popular-tours display-flex">
+        <div class="popular-tours-content">
+          <div class="popular-tours-details">
+            <h2 class="popular-tours-title title-primary">Our Popular Tours</h2>
+
+            <p class="popular-tours-description text-grey">
+              Explore our most popular tours that offer unforgettable
+              experiences and breathtaking destinations. Whether you're seeking
+              adventure, relaxation, or cultural immersion, our curated tours
+              cater to every traveler's desires.
+            </p>
+
+            <ul class="popular-tours-point display-flex text-grey">
+              <li>
+                Each tour is thoughtfully planned to include must-see
+                attractions, local experiences, and flexible schedules—perfect
+                for solo travelers, couples, and families alike.
+              </li>
+              <li>
+                Our expert guides ensure you get the most out of your journey,
+                providing insights into the culture, history, and hidden gems of
+                each destination.
+              </li>
+              <li>
+                With a variety of packages available, you can choose the tour
+                that best fits your interests and budget, making your dream
+                vacation a reality.
+              </li>
+            </ul>
+
+            <p class="popular-tours-conclusion text-grey">
+              Our popular tours are designed to offer the perfect mix of
+              exploration and relaxation. Whether you’re chasing mountain views,
+              tropical beaches, or cultural cityscapes, TripZen Travel ensures
+              every journey feels personal, safe, and truly rewarding. Ready to
+              embark on an unforgettable adventure?
+            </p>
+          </div>
+
+          <button class="btn-primary">Read More</button>
+        </div>
+
+        <img src="Images/popular_tours.png" class="popular-tours-img" alt="" />
+      </section>
+    </main>
+
     <footer></footer>
-</body>
+  </body>
 </html>
