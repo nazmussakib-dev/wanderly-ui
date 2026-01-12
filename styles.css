@@ -184,6 +184,229 @@ a {
   height: 550px;
 }
 
+/* ==== Your Destination section ====   */
+
+.your-destination {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.destination-intro {
+  max-width: 643px;
+  margin: 0 auto;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  max-width: 1180px;
+  margin: 40px auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.card span {
+  position: relative;
+  z-index: 1;
+}
+
+.maldives {
+  grid-column: span 6;
+  background-image: url("Images/maldives.png");
+}
+
+.indonesia {
+  grid-column: span 6;
+  background-image: url("Images/indonesia.png");
+}
+
+.srilanka {
+  grid-column: span 4;
+  background-image: url("Images/srilanka.png");
+}
+
+.north-america {
+  grid-column: span 4;
+  background-image: url("Images/north-america.png");
+}
+
+.kashmir {
+  grid-column: span 4;
+  background-image: url("Images/kashmir.png");
+}
+
+.bangladesh {
+  grid-column: span 6;
+  background-image: url("Images/bangladesh.png");
+}
+
+.bandarban {
+  grid-column: span 6;
+  background-image: url("Images/bandarban.png");
+}
+
+/* ==== Choose Us section ====  */
+
+.choose-us {
+  margin: 100px auto;
+}
+
+.choose-us-intro {
+  max-width: 643px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.choose-us-intro h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.cards-container {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.choice-card {
+  max-width: 573px;
+  padding: 32px;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.card1 {
+  background-color: rgba(251, 181, 99, 0.05);
+  border-radius: 12px;
+}
+
+.card2 {
+  background-color: rgba(41, 206, 246, 0.05);
+  border-radius: 12px;
+}
+
+.card3 {
+  background-color: rgba(233, 68, 68, 0.05);
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+/* ==== Deals & Discounts section ====   */
+
+.deals-intro {
+  max-width: 643px;
+  margin: 24px auto;
+  text-align: center;
+}
+
+.deals-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.satorini-card {
+  position: relative;
+  background-image: url("Images/satorini.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  height: 500px;
+  max-width: 1170px;
+  margin: 24px auto;
+  border-radius: 12px;
+
+  overflow: hidden;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.satorini-content {
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 580px;
+  margin-right: 40px;
+}
+
+.satorini-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.satorini-pricing {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.meta {
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+.metabar {
+  align-items: center;
+  gap: 8px;
+}
+
+.second-card {
+  background-image: url("Images/Group\ 40.png");
+  justify-content: left;
+}
+
+.second-card .satorini-content {
+  margin-left: 40px;
+}
+
 /* Responsive adjustments */
 
 /* ==== Mobile screen ==== */
@@ -246,6 +469,68 @@ a {
     max-width: 100%;
     height: auto;
   }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-column: span 1;
+    height: 200px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .satorini-card {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px;
+  }
+
+  .satorini-card::before {
+    content: "";
+    width: 100%;
+    height: 220px;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+
+  .satorini-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+  .second-card {
+    justify-content: flex-start;
+  }
+
+  .second-card .satorini-content {
+    margin-left: 0;
+  }
+
+  .meta {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .satorini-title {
+    font-size: 1.25rem;
+  }
+
+  .satorini-pricing {
+    font-size: 1.1rem;
+  }
 }
 
 /* ==== Tablet screen ==== */
@@ -306,12 +591,36 @@ a {
   }
 
   .popular-tours-img {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
   }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-column: span 1;
+    height: 200px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .satorini-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .second-card  .satorini-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
-/* ==== IPad Pro adjustments ====  */
+/* ==== IPad Pro ====  */
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   header,
@@ -346,7 +655,21 @@ a {
   }
 
   .popular-tours-img {
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-column: span 1;
+    height: 200px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
+
