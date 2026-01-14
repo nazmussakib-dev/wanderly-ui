@@ -560,7 +560,7 @@ hr {
   }
 
   .title-primary {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -612,6 +612,14 @@ hr {
     height: auto;
   }
 
+  .your-destination {
+    margin-top: 40px;
+  }
+
+  .destination-intro {
+    max-width: 309px;
+  }
+
   .destination-grid {
     grid-template-columns: 1fr;
   }
@@ -630,11 +638,16 @@ hr {
     margin: 50px auto;
   }
 
+  .choose-us-intro {
+    max-width: 309px;
+  }
+
   .satorini-card {
     height: auto;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 12px;
+    border: 1px solid #ff5400
   }
 
   .satorini-card::before {
@@ -652,7 +665,6 @@ hr {
     margin: 0;
     padding: 20px;
     border-radius: 0 0 12px 12px;
-
     background-color: #ffffff;
     opacity: 1;
   }
@@ -684,7 +696,7 @@ hr {
 
   .perfect-card {
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: 12px;
   }
 
