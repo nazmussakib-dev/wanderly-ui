@@ -2,7 +2,7 @@
 
 TripZen Travel is a modern, fully responsive travel website landing page designed to showcase destinations, tours, and exclusive deals. This project focuses on clean UI design, semantic HTML structure, and scalable CSS architecture using Flexbox and Grid.
 
-🔗 **Live Demo:** https://nazmussakib-dev.github.io/architecture-landing-page/
+🔗 **Live Demo:** [(https://nazmussakib-dev.github.io/wanderly-ui/)]
 
 ---
 
