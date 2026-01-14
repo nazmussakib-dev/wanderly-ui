@@ -130,7 +130,6 @@ a {
   gap: 16px;
 }
 
-.search-form input,
 .search-form select {
   padding: 12px 16px;
   border: none;
@@ -366,7 +365,7 @@ a {
 .satorini-content {
   position: relative;
   z-index: 1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 0.85;
   padding: 40px;
   border-radius: 12px;
@@ -407,6 +406,141 @@ a {
   margin-left: 40px;
 }
 
+/* ==== Perfect Place Section ==== */
+
+.perfect-place {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.perfect-text {
+  max-width: 532px;
+}
+
+.perfect-title {
+  margin-bottom: 0;
+}
+
+.perfect-subtitle,
+.perfect-points {
+  line-height: 1.5;
+  margin: 16px 0;
+}
+
+.points-item {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.perfect-card {
+  background-image: url("Images/mountains.png");
+  width: 35%;
+  height: 300px;
+}
+
+.perfect-card span {
+  max-width: 272px;
+  text-align: center;
+}
+
+/* ==== Newsletter Section ====  */
+
+.newsletter {
+  margin: 100px auto;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.news-card {
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  border: 1px solid #ff5400;
+  border-radius: 12px;
+}
+
+.news-card h2 {
+  margin: 0;
+}
+
+.news-form {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.news-form input {
+  padding: 12px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.sale-card {
+  position: relative;
+  border-radius: 16px;
+}
+
+.sale-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.badge {
+  position: absolute;
+  right: -10px;
+  bottom: 30px;
+  background-color: #ff5400;
+  color: #ffffff;
+  padding: 16px 28px;
+  border-radius: 12px;
+  text-align: center;
+  transform: rotate(-22deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.badge small {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.badge span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ==== Footer styles ====  */
+
+footer {
+  padding: 80px;
+  background-color: rgba(19, 19, 24, 0.05);
+  text-align: center;
+}
+
+#footer-brand {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.socials {
+  justify-content: center;
+  gap: 24px;
+  margin: 40px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.copyright {
+  margin: 50px 0 0 0;
+}
+
 /* Responsive adjustments */
 
 /* ==== Mobile screen ==== */
@@ -415,6 +549,10 @@ a {
   header,
   main {
     padding: 0 20px;
+  }
+
+  .title-primary {
+    font-size: 1.8rem;
   }
 
   .hero {
@@ -453,12 +591,8 @@ a {
     width: 100%;
   }
 
-  .search-form input {
-    width: 88%;
-  }
-
   .search-form button {
-    padding: 10px;
+    padding: 8px;
   }
 
   .popular-tours {
@@ -482,6 +616,10 @@ a {
   .cards-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .choose-us {
+    margin: 50px auto;
   }
 
   .satorini-card {
@@ -531,6 +669,25 @@ a {
   .satorini-pricing {
     font-size: 1.1rem;
   }
+
+  .perfect-place {
+    flex-direction: column;
+  }
+
+  .perfect-card {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
 }
 
 /* ==== Tablet screen ==== */
@@ -579,28 +736,27 @@ a {
     width: 100%;
   }
 
-  .search-form input {
-    width: 92%;
+  .search-form button {
+    padding: 8px;
   }
 
-  .search-form button {
-    padding: 10px;
-  }
   .popular-tours {
     flex-direction: column;
+    align-items: center;
   }
 
   .popular-tours-img {
-    max-width: 80%;
+    width: 100%;
+    height: 400px;
   }
 
   .destination-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card {
     grid-column: span 1;
-    height: 200px;
+    height: 220px;
   }
 
   .cards-container {
@@ -608,16 +764,63 @@ a {
     align-items: center;
   }
 
+  .bandarban {
+    grid-column: span 2;
+  }
+
   .satorini-content {
     max-width: 80%;
     margin: 0 auto;
   }
 
-  .second-card  .satorini-content {
+  .second-card .satorini-content {
     max-width: 80%;
     margin: 0 auto;
   }
 
+  .perfect-place {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .perfect-text {
+    width: 55%;
+  }
+
+  .perfect-card {
+    width: 45%;
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .perfect-title {
+    font-size: 2.2rem;
+  }
+
+  .perfect-subtitle,
+  .perfect-points {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .btn-perfect {
+    margin-top: 12px;
+  }
+
+  .newsletter {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .news-card,
+  .sale-card {
+    width: 50%;
+  }
+
+  footer {
+    padding: 50px 40px;
+  }
 }
 
 /* ==== IPad Pro ====  */
@@ -652,24 +855,53 @@ a {
 
   .popular-tours {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tours {
+    flex-direction: row;
   }
 
   .popular-tours-img {
-    max-width: 80%;
+    max-width: 480px;
+    height: auto;
   }
 
   .destination-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card {
     grid-column: span 1;
-    height: 200px;
+    height: 240px;
   }
 
   .cards-container {
     flex-direction: column;
     align-items: center;
   }
+
+  .bandarban {
+    grid-column: span 3;
+  }
+
+  .perfect-place {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .perfect-card {
+    width: 45%;
+    height: 300px;
+  }
+
+  footer {
+    padding: 50px 60px;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}
