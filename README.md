@@ -54,7 +54,14 @@ Through this project, I strengthened my understanding of:
 
 ## 📸 Preview
 
-![TripZen Travel Preview](Images/banner.png)
+### Hero Section
+![Hero Section](Images/banner.png)
+
+### Popular Tours & Destinations
+![Destinations](Images/popular_tours.png)
+
+### Deals & Newsletter
+![Deals](Images/newsletter.png)
 
 ---
 
