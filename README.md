@@ -52,19 +52,6 @@ Through this project, I strengthened my understanding of:
 
 ---
 
-## 📸 Preview
-
-### Hero Section
-![Hero Section](Images/banner.png)
-
-### Popular Tours & Destinations
-![Destinations](Images/popular_tours.png)
-
-### Deals & Newsletter
-![Deals](Images/newsletter.png)
-
----
-
 ## 👤 Author
 
 **Nazmus Sakib**  
