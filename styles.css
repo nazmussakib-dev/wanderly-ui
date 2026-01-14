@@ -410,6 +410,7 @@ a {
 
 .perfect-place {
   margin: 0 auto;
+  max-width: 1770px;
   justify-content: center;
   align-items: center;
   gap: 28px;
@@ -516,10 +517,17 @@ a {
 /* ==== Footer styles ====  */
 
 footer {
-  padding: 80px;
   background-color: rgba(19, 19, 24, 0.05);
+  padding: 80px 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
   text-align: center;
 }
+
 
 #footer-brand {
   margin: 0 auto;
@@ -686,7 +694,20 @@ hr {
   }
 
   footer {
-    padding: 50px 20px;
+    padding: 50px 0;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .socials {
+    gap: 16px;
+  }
+
+  .copyright {
+    margin-top: 32px;
+    font-size: 0.85rem;
   }
 }
 
@@ -819,7 +840,16 @@ hr {
   }
 
   footer {
-    padding: 50px 40px;
+    padding: 60px 0;
+  }
+
+  .footer-container {
+    max-width: 900px;
+    padding: 0 30px;
+  }
+
+  .socials {
+    gap: 20px;
   }
 }
 
@@ -896,7 +926,21 @@ hr {
   }
 
   footer {
-    padding: 50px 60px;
+    padding: 70px 0;
+  }
+
+  .footer-container {
+    max-width: 1000px;
+    padding: 0 50px;
+  }
+
+  .socials {
+    gap: 28px;
+  }
+
+  .copyright {
+    font-size: 0.95rem;
+    margin-top: 40px;
   }
 }
 
